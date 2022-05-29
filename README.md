@@ -4,13 +4,26 @@
 </h1>
 
 <h4 align="center">
+
+
   A lightweight Svelte component to draw SVG on hover.
-  <br/>
+
+  [![REPL](https://img.shields.io/badge/Svelte-REPL-blue)](https://svelte.dev/repl/d9990fc8a03743d0b03dc95ed50e5893?version=3.48.0)
+  [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+  [![NPM version](https://img.shields.io/npm/v/svelte-hover-draw-svg?logo=NPM&color=purple)](https://www.npmjs.com/package/svelte-hover-draw-svg)
+  ![npm bundle size](https://img.shields.io/bundlephobia/min/svelte-hover-draw-svg)
 
   <img src="https://drive.google.com/uc?id=1i1BOYb3WuSP5KpIsMoSe9aIH7-T3rzo_" alt="Svelte MultiSelect" width="50%">
 </h4>
 
 ---
+
+## Features
+
+- 🪶 Lightweight: Wrapper component with only `svelte` as dev dependency
+- 😌 Straightforward: Just put your SVG or component with SVG under the component
+- 📦 Encapsulated: No need `on:mouseenter` & `on:mouseleave`. Expose `hovering` for extra hover effects & conditionals
+- 🛠 Customizable: CSS variable `--draw-speed` to control draw speed
 
 ## Install
 
@@ -22,7 +35,8 @@ yarn add -D svelte-hover-draw-svg
 pnpm add -D svelte-hover-draw-svg
 ```
 
-## Prerequisite: SVG shape must have a `stroke`
+## Prerequisite:
+SVG shape must have a `stroke`
 
 ```html
 <svg stroke="#000" stroke-width="2">
@@ -30,10 +44,7 @@ pnpm add -D svelte-hover-draw-svg
 </svg>
 ```
 
-## Options
-
-- Expose the `hovering` state to the component.
-- Use `--draw-speed=[number]` to change the speed.
+> This library works better with "Outlined" SVGs.
 
 ## Usage
 
@@ -78,3 +89,4 @@ pnpm add -D svelte-hover-draw-svg
   </a>
 </HoverDrawSVG>
 ```
+
