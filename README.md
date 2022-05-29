@@ -22,7 +22,7 @@
 
 - 🪶 Lightweight: Wrapper component with only `svelte` as dev dependency
 - 😌 Straightforward: Just put your SVG or component with SVG under the component
-- 📦 Encapsulated: No need `on:mouseenter` & `on:mouseleave`. Expose `hovering` for extra hover effects & conditionals
+- 📦 Encapsulated: Expose `hovering` for extra hover effects & conditionals
 - 🛠 Customizable: CSS variable `--draw-speed` to control draw speed
 
 ## Install
