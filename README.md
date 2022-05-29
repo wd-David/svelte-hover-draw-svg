@@ -26,7 +26,7 @@ pnpm add -D svelte-hover-draw-svg
 
 ```html
 <svg stroke="#000" stroke-width="2">
- <path />
+  <path />
 </svg>
 ```
 
@@ -41,13 +41,13 @@ pnpm add -D svelte-hover-draw-svg
 
 ```svelte
 <script>
- import HoverDrawSVG from 'svelte-hover-draw-svg';
+  import HoverDrawSVG from 'svelte-hover-draw-svg';
 </script>
 
 <HoverDrawSVG>
- <svg>
-  <path />
- </svg>
+  <svg>
+    <path />
+  </svg>
 </HoverDrawSVG>
 ```
 
@@ -55,11 +55,11 @@ pnpm add -D svelte-hover-draw-svg
 
 ```svelte
 <script>
- import HoverDrawSVG from 'svelte-hover-draw-svg';
+  import HoverDrawSVG from 'svelte-hover-draw-svg';
 </script>
 
 <HoverDrawSVG --draw-speed="2">
- <SvgComponent />
+  <SvgComponent />
 </HoverDrawSVG>
 ```
 
@@ -67,14 +67,14 @@ pnpm add -D svelte-hover-draw-svg
 
 ```svelte
 <script>
- import HoverDrawSVG from 'svelte-hover-draw-svg';
+  import HoverDrawSVG from 'svelte-hover-draw-svg';
 </script>
 
 <HoverDrawSVG let:hovering>
- <a href="/" class:hoverEffect={hovering}>
-  <svg>
-   <path />
-  </svg>
- </a>
+  <a href="/" class:hoverEffect={hovering}>
+    <svg>
+      <path />
+    </svg>
+  </a>
 </HoverDrawSVG>
 ```
