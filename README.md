@@ -1,10 +1,13 @@
 <h1 align="center">
+  <img src="https://drive.google.com/uc?id=1RdqWuFIwbLOLey2p7Dwg3QxKPM4N_LYu" alt="Svelte MultiSelect" width="50px">
   <br class="hide-in-docs">&ensp;Svelte Hover Draw SVG
 </h1>
 
 <h4 align="center">
-<br>A lightweight Svelte component to draw SVG on hover.</br>
-<img src="https://drive.google.com/uc?id=1i1BOYb3WuSP5KpIsMoSe9aIH7-T3rzo_" alt="Svelte MultiSelect">
+  A lightweight Svelte component to draw SVG on hover.
+  <br/>
+
+  <img src="https://drive.google.com/uc?id=1i1BOYb3WuSP5KpIsMoSe9aIH7-T3rzo_" alt="Svelte MultiSelect" width="50%">
 </h4>
 
 ---
@@ -37,41 +40,41 @@ pnpm add -D svelte-hover-draw-svg
 - Inline SVG:
 
 ```svelte
- <script>
-   import HoverDrawSVG from 'svelte-hover-draw-svg
- </scrtip>
+<script>
+	import HoverDrawSVG from 'svelte-hover-draw-svg';
+</script>
 
- <HoverDrawSVG>
-   <svg>
-     <path />
-   </svg>
- </HoverDrawSVG>
+<HoverDrawSVG>
+	<svg>
+		<path />
+	</svg>
+</HoverDrawSVG>
 ```
 
 - SVG Component (draw 2x faster than default):
 
 ```svelte
- <script>
-   import HoverDrawSVG from 'svelte-hover-draw-svg
- </scrtip>
+<script>
+	import HoverDrawSVG from 'svelte-hover-draw-svg';
+</script>
 
- <HoverDrawSVG --draw-speed="2">
-   <SvgComponent />
- </HoverDrawSVG>
+<HoverDrawSVG --draw-speed="2">
+	<SvgComponent />
+</HoverDrawSVG>
 ```
 
 - Nested elements (expose `hovering` status):
 
 ```svelte
- <script>
-   import HoverDrawSVG from 'svelte-hover-draw-svg
- </scrtip>
+<script>
+	import HoverDrawSVG from 'svelte-hover-draw-svg';
+</script>
 
- <HoverDrawSVG let:hovering>
-   <a href="/" class:hoverEffect={hovering}>
-     <svg>
-       <path />
-     </svg>
-   </a>
- </HoverDrawSVG>
+<HoverDrawSVG let:hovering>
+	<a href="/" class:hoverEffect={hovering}>
+		<svg>
+			<path />
+		</svg>
+	</a>
+</HoverDrawSVG>
 ```
