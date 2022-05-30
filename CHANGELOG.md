@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/davipon/svelte-hover-draw-svg/compare/v1.1.2...v2.0.0) (2022-05-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add attribute "pathLength" to all child elements under SVG
+
+### ✨ Features
+
+* replace "--draw-speed" with "--duration" ([cfd0e4b](https://github.com/davipon/svelte-hover-draw-svg/commit/cfd0e4b8a9c67389b6a2999f87f0d20c84e9f9c5))
+
 ### [1.1.2](https://github.com/davipon/svelte-hover-draw-svg/compare/v1.1.1...v1.1.2) (2022-05-29)
 
 
