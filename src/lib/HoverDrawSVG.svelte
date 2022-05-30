@@ -1,5 +1,8 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	let hovering = false;
+	let container: HTMLElement;
 
 	function enter() {
 		hovering = true;
@@ -8,6 +11,12 @@
 	function leave() {
 		hovering = false;
 	}
+
+	onMount(() => {
+		container
+			.querySelectorAll('line, path, polygon, polyline, rect')
+			.forEach((path) => path.setAttribute('pathLength', '1'));
+	});
 </script>
 
 <!--
@@ -20,7 +29,7 @@
 		</svg>
 		```
 	- Expose the `hovering` state to the component. (optional)
-  - Use `--draw-speed=[number]` to change the speed. (optional)
+  - Use `--duration=[number]` to set the draw time. (default 1s)
   - Inline SVG:
 		```svelte
 		 <HoverDrawSVG>
@@ -29,9 +38,9 @@
 		   </svg>
 		 </HoverDrawSVG>
 		```
-  - SVG Component (draw 2x faster than default):
+  - SVG Component (draw in 2 seconds):
 		```svelte
-		 <HoverDrawSVG --draw-speed="2">
+		 <HoverDrawSVG --duration="2">
 		   <SvgComponent />
 		 </HoverDrawSVG>
 		```
@@ -46,19 +55,28 @@
 		 </HoverDrawSVG>
 		```
 -->
-<div on:mouseenter={enter} on:mouseleave={leave} class:draw-on-hover={hovering}>
+<div bind:this={container} on:mouseenter={enter} on:mouseleave={leave} class="path">
 	<slot {hovering} />
 </div>
 
 <style>
-	.draw-on-hover {
-		stroke-dasharray: 1000;
-		stroke-dashoffset: 1000;
-		animation: draw calc(15s / var(--draw-speed, 1)) linear alternate infinite;
+	.path:hover {
+		stroke-dasharray: 1;
+		stroke-dashoffset: 1;
+		animation: dash calc(1s * var(--duration, 1)) linear forwards;
 	}
 
-	@keyframes draw {
-		to {
+	@keyframes dash {
+		0% {
+			stroke-dashoffset: 1;
+		}
+		25% {
+			stroke-dashoffset: 0.9;
+		}
+		75% {
+			stroke-dashoffset: 0.1;
+		}
+		100% {
 			stroke-dashoffset: 0;
 		}
 	}

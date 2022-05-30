@@ -24,12 +24,12 @@
 			</svg>
 		</a>
 	</HoverDrawSVG>
-	<HoverDrawSVG --draw-speed="10">
+	<HoverDrawSVG --duration="0.5">
 		<button>
 			<Candle />
 		</button>
 	</HoverDrawSVG>
-	<HoverDrawSVG --draw-speed="10">
+	<HoverDrawSVG --duration="1">
 		<Svelte />
 	</HoverDrawSVG>
 </div>
