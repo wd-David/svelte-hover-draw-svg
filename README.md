@@ -23,7 +23,7 @@
 - 🪶 Lightweight: Wrapper component with only `svelte` as dev dependency
 - 😌 Straightforward: Just put your SVG or component with SVG under the component
 - 📦 Encapsulated: Expose `hovering` for extra hover effects & conditionals
-- 🛠 Customizable: CSS variable `--draw-speed` to control draw speed
+- 🛠 Customizable: CSS variable `--duration` to set the duration
 
 ## Install
 
@@ -62,14 +62,14 @@ SVG shape must have a `stroke`
 </HoverDrawSVG>
 ```
 
-- SVG Component (draw 2x faster than default):
+- SVG Component (set draw time to 2s, default is 1s):
 
 ```svelte
 <script>
   import HoverDrawSVG from 'svelte-hover-draw-svg';
 </script>
 
-<HoverDrawSVG --draw-speed="2">
+<HoverDrawSVG --duration="2">
   <SvgComponent />
 </HoverDrawSVG>
 ```
