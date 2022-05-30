@@ -1,6 +1,6 @@
 {
 	"name": "svelte-hover-draw-svg",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "A lightweight Svelte component to draw SVG on hover.",
 	"author": "Peng Wei Che",
 	"repository": "https://github.com/davipon/svelte-hover-draw-svg",
