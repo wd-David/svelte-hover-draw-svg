@@ -40,9 +40,9 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies and build 🔧
-        run: pnpm install && pnpm build
+        run: pnpm install && pnpm package
 
       - name: Publish package on NPM 📦
-        run: pnpm publish
+        run: pnpm publish package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
