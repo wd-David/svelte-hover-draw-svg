@@ -50,3 +50,7 @@ jobs:
       - name: Run Tests
         id: tests
         run: pnpm test
+
+      - name: Run Svelte Check
+        id: svelte-check
+        run: pnpm check

@@ -14,9 +14,9 @@
 		"prepare": "svelte-kit sync && husky install",
 		"test": "playwright test",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
+		"ci": "pnpm format && pnpm lint && pnpm test && pnpm check",
 		"release": "standard-version --no-verify",
 		"release:patch": "standard-version --no-verify --release-as patch"
 	},

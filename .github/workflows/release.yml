@@ -42,7 +42,12 @@ jobs:
       - name: Install dependencies and build 🔧
         run: pnpm install && pnpm package
 
+      - name: Run CI
+        id: ci
+        run: pnpm ci
+
       - name: Publish package on NPM 📦
+        if: steps.ci.outcome == 'success'
         run: pnpm publish package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
