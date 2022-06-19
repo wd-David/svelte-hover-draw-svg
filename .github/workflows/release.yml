@@ -51,6 +51,6 @@ jobs:
 
       - name: Publish package on NPM 📦
         if: steps.ci.outcome == 'success'
-        run: pnpm publish package
+        run: pnpm publish package --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

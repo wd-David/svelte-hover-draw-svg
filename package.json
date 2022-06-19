@@ -12,7 +12,7 @@
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync && husky install",
-		"test": "playwright test",
+		"test": "playwright test --update-snapshots",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
