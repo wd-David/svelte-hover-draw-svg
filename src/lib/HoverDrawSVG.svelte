@@ -55,12 +55,12 @@
 		 </HoverDrawSVG>
 		```
 -->
-<div bind:this={container} on:mouseenter={enter} on:mouseleave={leave} class="path">
+<div bind:this={container} on:mouseenter={enter} on:mouseleave={leave} class="hover-draw-svg">
 	<slot {hovering} />
 </div>
 
 <style>
-	.path:hover {
+	.hover-draw-svg:hover {
 		stroke-dasharray: 1;
 		stroke-dashoffset: 1;
 		animation: dash calc(1s * var(--duration, 1)) linear forwards;
