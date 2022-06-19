@@ -12,6 +12,9 @@
   [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
   [![NPM version](https://img.shields.io/npm/v/svelte-hover-draw-svg?logo=NPM&color=purple)](https://www.npmjs.com/package/svelte-hover-draw-svg)
   ![npm bundle size](https://img.shields.io/bundlephobia/min/svelte-hover-draw-svg)
+  ![CI](https://github.com/davipon/svelte-hover-draw-svg/actions/workflows/ci.yml/badge.svg)
+  ![Release](https://github.com/davipon/svelte-hover-draw-svg/actions/workflows/release.yml/badge.svg)
+  ![license](https://img.shields.io/github/license/davipon/svelte-hover-draw-svg)
 
   <img src="https://drive.google.com/uc?id=1i1BOYb3WuSP5KpIsMoSe9aIH7-T3rzo_" alt="Svelte MultiSelect" width="50%">
 </h4>
