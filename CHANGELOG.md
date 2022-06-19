@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.4](https://github.com/davipon/svelte-hover-draw-svg/compare/v2.0.3...v2.0.4) (2022-06-19)
+
+
+### 📝 Documentation
+
+* add badges to README.md ([56fd846](https://github.com/davipon/svelte-hover-draw-svg/commit/56fd846bc347dca586114bc391ceab1e77b3335b))
+
 ### [2.0.3](https://github.com/davipon/svelte-hover-draw-svg/compare/v2.0.2...v2.0.3) (2022-06-19)
 
 ### [2.0.2](https://github.com/davipon/svelte-hover-draw-svg/compare/v2.0.1...v2.0.2) (2022-06-19)
