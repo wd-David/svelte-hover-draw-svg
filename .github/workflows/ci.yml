@@ -48,7 +48,7 @@ jobs:
         run: pnpm format && pnpm lint
 
       - name: Install Playwright
-        run: npx playwright install --with-deps
+        run: npx playwright install
 
       - name: Run Tests
         id: tests
