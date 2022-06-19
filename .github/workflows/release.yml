@@ -42,15 +42,7 @@ jobs:
       - name: Install dependencies and build 🔧
         run: pnpm install && pnpm package
 
-      - name: Install Playwright
-        run: npx playwright install
-
-      - name: Run CI
-        id: ci
-        run: pnpm ci
-
       - name: Publish package on NPM 📦
-        if: steps.ci.outcome == 'success'
         run: pnpm publish package --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
