@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@commitlint/cz-commitlint': 17.0.3
-  '@playwright/test': 1.22.2
+  '@playwright/test': 1.23.1
   '@sveltejs/adapter-auto': 1.0.0-next.52
   '@sveltejs/kit': 1.0.0-next.355
   '@typescript-eslint/eslint-plugin': 5.30.0
@@ -30,7 +30,7 @@ devDependencies:
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@commitlint/cz-commitlint': 17.0.3_nlwf7yf5555jiq2ch63nbqq5xy
-  '@playwright/test': 1.22.2
+  '@playwright/test': 1.23.1
   '@sveltejs/adapter-auto': 1.0.0-next.52
   '@sveltejs/kit': 1.0.0-next.355_svelte@3.48.0
   '@typescript-eslint/eslint-plugin': 5.30.0_5mtqsiui4sk53pmkx7i7ue45wm
@@ -365,13 +365,13 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@playwright/test/1.22.2:
-    resolution: {integrity: sha512-cCl96BEBGPtptFz7C2FOSN3PrTnJ3rPpENe+gYCMx4GNNDlN4tmo2D89y13feGKTMMAIVrXfSQ/UmaQKLy1XLA==}
+  /@playwright/test/1.23.1:
+    resolution: {integrity: sha512-dKplLPSYPZgnsBk1xxOophhpx3ZVg8DveoNJgLPe096lDCfmaIIreLsYF+4hqzy3PG61IP+aEnG5VAOjC3bhbA==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 18.0.0
-      playwright-core: 1.22.2
+      playwright-core: 1.23.1
     dev: true
 
   /@rollup/pluginutils/4.2.1:
@@ -3387,8 +3387,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /playwright-core/1.22.2:
-    resolution: {integrity: sha512-w/hc/Ld0RM4pmsNeE6aL/fPNWw8BWit2tg+TfqJ3+p59c6s3B6C8mXvXrIPmfQEobkcFDc+4KirNzOQ+uBSP1Q==}
+  /playwright-core/1.23.1:
+    resolution: {integrity: sha512-9CXsE0gawph4KXl6oUaa0ehHRySZjHvly4TybcBXDvzK3N3o6L/eZ8Q6iVWUiMn0LLS5bRFxo1qEtOETlYJxjw==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
