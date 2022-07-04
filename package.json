@@ -15,6 +15,7 @@
 		"test": "playwright test --update-snapshots",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
+		"cz": "cz",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"ci": "pnpm format && pnpm lint && pnpm test && pnpm check",
 		"release": "standard-version --no-verify",
