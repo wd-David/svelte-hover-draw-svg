@@ -26,7 +26,7 @@
 		"@commitlint/config-conventional": "17.0.3",
 		"@commitlint/cz-commitlint": "17.0.3",
 		"@playwright/test": "1.23.4",
-		"@sveltejs/adapter-auto": "1.0.0-next.62",
+		"@sveltejs/adapter-auto": "1.0.0-next.63",
 		"@sveltejs/kit": "1.0.0-next.379",
 		"@typescript-eslint/eslint-plugin": "5.30.7",
 		"@typescript-eslint/parser": "5.30.7",
