@@ -11,7 +11,7 @@
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync && husky install",
+		"prepare": "husky install",
 		"test": "playwright test --update-snapshots",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
