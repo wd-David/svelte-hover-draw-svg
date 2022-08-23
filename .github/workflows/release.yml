@@ -40,7 +40,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies and build 🔧
-        run: pnpm install && && pnpm build && pnpm package
+        run: pnpm install && pnpm build && pnpm package
 
       - name: Publish package on NPM 📦
         run: pnpm publish package --no-git-checks
