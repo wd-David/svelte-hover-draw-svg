@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.3](https://github.com/davipon/svelte-hover-draw-svg/compare/v2.1.2...v2.1.3) (2022-09-12)
+
+
+### 🚚 Chores
+
+* **deps:** update all non-major dependencies ([4ecfff5](https://github.com/davipon/svelte-hover-draw-svg/commit/4ecfff5d856ac01b26878fa1401defd99c6bd136))
+* **deps:** update all non-major dependencies ([5e1f33d](https://github.com/davipon/svelte-hover-draw-svg/commit/5e1f33d56e0916ec243dcaf87a953af2f79015f8))
+
 ### [2.1.2](https://github.com/davipon/svelte-hover-draw-svg/compare/v2.1.1...v2.1.2) (2022-08-23)
 
 ### [2.1.1](https://github.com/davipon/svelte-hover-draw-svg/compare/v2.1.0...v2.1.1) (2022-08-23)
