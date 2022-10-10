@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://drive.google.com/uc?id=1RdqWuFIwbLOLey2p7Dwg3QxKPM4N_LYu" alt="Svelte MultiSelect" width="50px">
+  <img src="./assets/logo.svg" alt="Svelte MultiSelect" width="50px">
   <br class="hide-in-docs">&ensp;Svelte Hover Draw SVG
 </h1>
 
@@ -16,17 +16,19 @@
   ![Release](https://github.com/davipon/svelte-hover-draw-svg/actions/workflows/release.yml/badge.svg)
   ![license](https://img.shields.io/github/license/davipon/svelte-hover-draw-svg)
 
-  <img src="https://drive.google.com/uc?id=1i1BOYb3WuSP5KpIsMoSe9aIH7-T3rzo_" alt="Svelte MultiSelect" width="50%">
+  <img src="./assets/svelte-hover-draw-svg.gif" alt="Svelte MultiSelect" width="50%">
 </h4>
 
 ---
 
 ## Features
 
-- 🪶 Lightweight: Wrapper component with only `svelte` as dev dependency
+- 🤏 Lightweight: Wrapper component with only `svelte` as dev dependency
 - 😌 Straightforward: Just put your SVG or component with SVG under the component
 - 📦 Encapsulated: Expose `hovering` for extra hover effects & conditionals
 - 🛠 Customizable: CSS variable `--duration` to set the duration
+
+> Blog post @hashnode: [Build a Svelte Component To Draw SVG On Hover](https://davipon.hashnode.dev/build-a-svelte-component-to-draw-svg-on-hover)
 
 ## Install
 
