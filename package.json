@@ -23,7 +23,7 @@
 		"@playwright/test": "1.32.1",
 		"@sveltejs/adapter-auto": "2.0.0",
 		"@sveltejs/kit": "1.14.0",
-		"@sveltejs/package": "2.0.2",
+		"@sveltejs/package": "^2.0.2",
 		"@typescript-eslint/eslint-plugin": "5.57.0",
 		"@typescript-eslint/parser": "5.57.0",
 		"eslint": "8.36.0",
@@ -40,11 +40,30 @@
 		"typescript": "5.0.2",
 		"vite": "4.2.1"
 	},
+	"peerDependencies": {
+		"svelte": "^3.57.0"
+	},
 	"type": "module",
 	"keywords": [
 		"svelte",
 		"svg",
 		"animation",
 		"component"
-	]
+	],
+	"exports": {
+		"./HoverDrawSVG.svelte": {
+			"types": "./dist/HoverDrawSVG.svelte.d.ts",
+			"svelte": "./dist/HoverDrawSVG.svelte"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"typesVersions": {
+		">4.0": {
+			"HoverDrawSVG.svelte": [
+				"./dist/HoverDrawSVG.svelte.d.ts"
+			]
+		}
+	}
 }
