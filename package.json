@@ -54,6 +54,10 @@
 		"./HoverDrawSVG.svelte": {
 			"types": "./dist/HoverDrawSVG.svelte.d.ts",
 			"svelte": "./dist/HoverDrawSVG.svelte"
+		},
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
 		}
 	},
 	"files": [
@@ -63,6 +67,9 @@
 		">4.0": {
 			"HoverDrawSVG.svelte": [
 				"./dist/HoverDrawSVG.svelte.d.ts"
+			],
+			"index": [
+				"./dist/index.d.ts"
 			]
 		}
 	}
